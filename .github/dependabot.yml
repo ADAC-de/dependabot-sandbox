@@ -1,29 +1,28 @@
 ---
 version: 2
-multi-ecosystem-groups:
-  sec:
-    schedule:
-      interval: "weekly"
-    pull-request-branch-name:
-      template: "{prefix}/{name}"
-      prefix: "dbt"
-      separator: "-"
-      word-separator: "-"
-      branch-name-case: "lowercase"
-      max-length: 34
-    commit-message:
-      prefix: "fix(all): "
+
+pull-request-branch-name:
+  template: "{prefix}/{name}"
+  prefix: "dbt"
+  separator: "-"
+  word-separator: "-"
+  branch-name-case: "lowercase"
+  max-length: 34
+commit-message:
+  prefix: "fix(all): "
 
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
-    multi-ecosystem-group: "sec"
-    patterns: ["*"]
+    schedule:
+      interval: "weekly"
+
   - package-ecosystem: npm
     directory: "/javascript"
-    multi-ecosystem-group: "sec"
-    patterns: ["*"]
+    schedule:
+      interval: "weekly"
+
   - package-ecosystem: bundler
     directory: "/ruby"
-    multi-ecosystem-group: "sec"
-    patterns: ["*"]
+    schedule:
+      interval: "weekly"
