@@ -11,8 +11,8 @@ multi-ecosystem-groups:
       word-separator: "-"
       branch-name-case: "lowercase"
       max-length: 34
-  commit-message:
-    prefix: "fix(all): "
+    commit-message:
+      prefix: "fix(all): "
 
 updates:
   - package-ecosystem: "github-actions"
