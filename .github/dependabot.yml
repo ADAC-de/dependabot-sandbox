@@ -18,9 +18,12 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     multi-ecosystem-group: "sec"
+    patterns: ["*"]
   - package-ecosystem: npm
     directory: "/javascript"
     multi-ecosystem-group: "sec"
+    patterns: ["*"]
   - package-ecosystem: bundler
     directory: "/ruby"
     multi-ecosystem-group: "sec"
+    patterns: ["*"]
