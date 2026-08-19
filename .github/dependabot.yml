@@ -17,7 +17,8 @@ updates:
       prefix: "fix(all): "
     groups:
       all:
-        patterns: "*"
+        patterns:
+          - "*"
 
   - package-ecosystem: npm
     directory: "/javascript"
@@ -34,7 +35,8 @@ updates:
       prefix: "fix(all): "
     groups:
       all:
-        patterns: "*"
+        patterns:
+          - "*"
 
   - package-ecosystem: bundler
     directory: "/ruby"
@@ -51,4 +53,5 @@ updates:
       prefix: "fix(all): "
     groups:
       all:
-        patterns: "*"
+        patterns:
+          - "*"
