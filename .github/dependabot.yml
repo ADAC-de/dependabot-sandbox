@@ -15,10 +15,6 @@ updates:
       max-length: 34
     commit-message:
       prefix: "fix(all): "
-    groups:
-      all:
-        patterns:
-          - "*"
 
   - package-ecosystem: npm
     directory: "/javascript"
@@ -33,10 +29,6 @@ updates:
       max-length: 34
     commit-message:
       prefix: "fix(all): "
-    groups:
-      all:
-        patterns:
-          - "*"
 
   - package-ecosystem: bundler
     directory: "/ruby"
@@ -51,7 +43,3 @@ updates:
       max-length: 34
     commit-message:
       prefix: "fix(all): "
-    groups:
-      all:
-        patterns:
-          - "*"
